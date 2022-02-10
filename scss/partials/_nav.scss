@@ -1,0 +1,109 @@
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0 2px;
+}
+
+.logo {
+    color: $black;
+    font-family: $bitter;
+    font-size: 24px;
+    text-decoration: none;
+    margin-left: 3px;
+    display: inline-block;
+    position: relative;
+    padding-left: 40px;
+    margin-top: 6px;
+
+    @include s {
+        margin-top: 0px;
+    }
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 34px;
+    height: 34px;
+    background: url("../images/logo.jpg");
+}
+
+.nav .logo span {
+    color: $red;
+}
+
+.box-nav {
+    position: relative;
+    display: flex;
+    transition: height 2s;
+
+    @include s {
+        display: block;
+        text-align: right;
+    }
+}
+
+.icomoon-ignore {
+    width: 0;
+    fill: $red;
+    height: 0;
+
+    @include s {
+        overflow: visible;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.menu {
+    display: flex;
+
+    @include s {
+        display: block;
+        position: absolute;
+        top: 17px;
+        right: 0;
+    }
+}
+
+.nav-hidden {
+    @include s {
+        height: 0;
+        overflow: hidden;
+    }
+}
+.ul {
+    display: flex;
+    @include s {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 0;
+        margin: 0px;
+        padding: 15px 3px 15px 15px;
+        background-color: $black;
+    }
+}
+.menu li {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    margin-right: 33px;
+    font-family: $roboto;
+    font-size: 13px;
+    color: $black;
+    text-transform: uppercase;
+
+    @include s {
+        margin-right: 0px;
+        color: $white;
+    }
+}
+
+.box-nav .active {
+    color: $red;
+}

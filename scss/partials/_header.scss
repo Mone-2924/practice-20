@@ -1,0 +1,29 @@
+.haeder{
+    background-image: url(../images/bc-gray.jpg);
+    padding: 12px 0;
+    text-align: right;
+}
+%headerIcon{
+    fill: #fff;
+    margin-left: 14px;
+}
+.twitter{
+    @extend %headerIcon;
+    width: 26px;
+    height: 16px;
+}
+.facebook{
+    @extend %headerIcon;
+    width: 9px;
+    height: 18px;
+}
+.dribbble{
+    @extend %headerIcon;
+    width: 18px;
+    height: 18px;
+}
+.wifi{
+    @extend %headerIcon;
+    width: 18px;
+    height: 18px;
+}

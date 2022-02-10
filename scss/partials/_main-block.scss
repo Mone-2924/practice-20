@@ -1,0 +1,31 @@
+.main-block {
+    background: url(../images/main-bc.jpg) no-repeat;
+    background-size: cover;
+    padding: 10.2% 0 15.5%;
+}
+
+.main-block_title {
+    color: $white;
+    font-size: 24px;
+    max-width: 358px;
+    font-weight: bold;
+    font-family: $bitter;
+    margin-top: -4.4%;
+
+    @include exl {
+        max-width: 358px;
+        font-size: 18px;
+    }
+}
+
+.title {
+    padding: 7px 14px 4px;
+    margin-bottom: 1px;
+    display: inline-block;
+    background-color: $bc;
+    letter-spacing: 0.7px;
+
+    @include exl {
+        padding: 4px 4px 4px;
+    }
+}

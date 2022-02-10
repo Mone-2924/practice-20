@@ -1,0 +1,145 @@
+.footer {
+    background: url(../images/bc-gray.jpg);
+    padding: 4% 0;
+    border-top: 8px solid $red;
+}
+
+.footer_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_col {
+    width: 31.6333%;
+
+    @include md {
+        width: 48%;
+    }
+    @include s{
+        width: 100%;
+    }
+}
+
+.md-col {
+    @include md {
+        width: 100%;
+    }
+}
+
+.footer_col p {
+    font-family: $bitter;
+}
+
+.footer_col_title {
+    color: $white;
+    font-weight: bold;
+    font-family: $roboto;
+    text-transform: uppercase;
+    font-size: 13.9px;
+    margin-top: 12px;
+    margin-left: 2px;
+}
+
+%footer-p {
+    color: $bright-gray;
+    font-family: $bitter;
+    letter-spacing: 0.3px;
+}
+
+.footer_col_p {
+    @extend %footer-p;
+    padding: 0 24px 14px 2px;
+    border-bottom: 1px solid #3b3b3b;
+}
+
+.about-p {
+    @extend %footer-p;
+}
+
+.footer_icon {
+    display: inline-block;
+    width: 30px;
+    height: 31px;
+    margin-right: 4px;
+}
+
+.rss {
+    background: url(../../images/footer_sprites.png)-3px -114px;
+}
+
+.foot-facebook {
+    background: url(../../images/footer_sprites.png)-39px -114px;
+}
+
+.foot-twitter {
+    background: url(../../images/footer_sprites.png) -75px -114px;
+}
+
+.email {
+    background: url(../../images/footer_sprites.png)-111px -114px;
+}
+
+.tellg {
+    background: url(../../images/footer_sprites.png)-147px -114px;
+}
+
+.path {
+    background: url(../../images/footer_sprites.png) -3px -3px;
+}
+
+.video {
+    background: url(../../images/footer_sprites.png) -39px -3px;
+}
+
+.zerply {
+    background: url(../../images/footer_sprites.png) -75px -3px;
+}
+
+.picasa {
+    background: url(../../images/footer_sprites.png) -3px -40px;
+}
+
+.stumble-upon {
+    background: url(../../images/footer_sprites.png) -39px -40px;
+}
+
+.skype {
+    background: url(../../images/footer_sprites.png) -75px -40px;
+}
+
+.reddit {
+    background: url(../../images/footer_sprites.png) -111px -3px;
+}
+
+.evernote {
+    background: url(../images/footer_sprites.png) -111px -40px;
+}
+
+.behance {
+    background: url(../images/footer_sprites.png) -3px -77px;
+}
+
+.foot-dribbble {
+    background: url(../images/footer_sprites.png) -39px -77px;
+}
+
+.digg {
+    background: url(../images/footer_sprites.png) -75px -77px;
+}
+
+.blogger {
+    background: url(../images/footer_sprites.png) -111px -77px;
+}
+
+.flickr {
+    background: url(../images/footer_sprites.png) -147px -3px;
+}
+
+.linkedin {
+    background: url(../images/footer_sprites.png) -147px -40px;
+}
+
+.google {
+    background: url(../images/footer_sprites.png) -147px -77px;
+}

@@ -1,0 +1,53 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 28px 64px;
+}
+
+.col {
+    width: 31%;
+    @include md {
+        width: 48%;
+    }
+    @include s{
+        width: 100%;
+    }
+}
+
+.col-title {
+    font-family: $bitter;
+    font-size: 18px;
+    color: $black;
+    position: relative;
+    padding-left: 47px;
+    margin-top: 24px;
+}
+
+%colicon {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    left: -1px;
+    top: -6px;
+}
+
+.title-1::before {
+    @extend %colicon;
+    background: url(../images/info_sprites.png) -8px -54px, rgba(0, 0, 0, 0.8);
+}
+
+.title-2::before {
+    @extend %colicon;
+    background: url(../images/info_sprites.png) -8px -8px, rgba(0, 0, 0, 0.8);
+}
+
+.title-3::before {
+    @extend %colicon;
+    background: url(../images/info_sprites.png) -8px -102px, rgba(0, 0, 0, 0.8);
+}
+
+.col p {
+    color: $dark-gray;
+}
